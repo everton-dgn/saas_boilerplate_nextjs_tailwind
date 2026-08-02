@@ -15,7 +15,7 @@
     "biome:ci": "biome ci --no-errors-on-unmatched --files-ignore-unknown=true",
     "dead-code": "pnpm knip && pnpm knip --strict && pnpm knip --cycles",
     "dead-code:fix": "knip --fix --format",
-    "scan:secrets": "kingfisher scan . --git-history none --no-validate --exclude node_modules --exclude .next --exclude playwright-report --exclude test-results --exclude coverage --exclude storybook-static",
+    "scan:secrets": "kingfisher scan . --git-history none --no-validate --redact --exclude node_modules --exclude .next --exclude playwright-report --exclude test-results --exclude coverage --exclude storybook-static",
     "commitlint": "commitlint",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
