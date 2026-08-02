@@ -131,6 +131,10 @@ As versões exatas de Node e pnpm vivem no repositório, não nesta página:
   para adotá-la automaticamente.
 - **pnpm**: a versão fixada em `packageManager` no `package.json`. Rode
   `corepack enable` e o Corepack resolve a versão correta sozinho.
+- **Kingfisher**: binário independente usado na varredura de segredos, sem
+  vínculo com o `package.json`. Instale com `brew install kingfisher`. O hook
+  de `pre-commit` avisa e segue adiante quando ele não está presente; o gate
+  que bloqueia o merge é o workflow `Secret Scan`.
 
 Ao subir a linha do Node, altere `package.json`, `.nvmrc`, `.node-version` e
 os workflows do GitHub Actions no mesmo commit.
@@ -170,7 +174,7 @@ Disponível em http://localhost:3000
 | `pnpm start`        | Iniciar servidor de produção           |
 | `pnpm lint`         | Executar linting do Biome              |
 | `pnpm format`       | Formatar código com Biome              |
-| `pnpm dead-code` | Auditar código e dependências com Knip |
+| `pnpm dead-code`    | Auditar código e dependências com Knip |
 | `pnpm typecheck`    | Verificação de tipos TypeScript        |
 | `pnpm test`         | Executar testes unitários (Vitest)     |
 | `pnpm test:w`       | Executar testes em modo de observação  |
@@ -178,6 +182,7 @@ Disponível em http://localhost:3000
 | `pnpm test:ui`      | Interface Vitest com cobertura         |
 | `pnpm test:e2e`     | Executar testes E2E (Playwright)       |
 | `pnpm check:update` | Verificar atualizações de dependências |
+| `pnpm scan:secrets` | Varrer segredos com o Kingfisher       |
 
 **Pipeline completo de qualidade:**
 
