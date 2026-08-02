@@ -21,6 +21,15 @@ pre-commit:
       glob: '*.{ts,tsx,json}'
       run: pnpm typecheck
 
+    - name: secret-scan
+      run: |
+        if ! command -v kingfisher > /dev/null 2>&1; then
+          echo "kingfisher não instalado; varredura de segredos ignorada."
+          echo "Instale com: brew install kingfisher"
+          exit 0
+        fi
+        pnpm scan:secrets --staged
+
 pre-push:
   parallel: true
 
