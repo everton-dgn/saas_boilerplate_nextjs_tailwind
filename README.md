@@ -1,8 +1,8 @@
 <div align="center">
 
-<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/sass_boilerplate_nextjs_tailwind?style=plastic)</a>
-![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/sass_boilerplate_nextjs_tailwind?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/sass_boilerplate_nextjs_tailwind?color=yellow&style=plastic)
+<a href="./LICENSE">![GitHub](https://img.shields.io/github/license/everton-dgn/saas_boilerplate_nextjs_tailwind?style=plastic)</a>
+![GitHub repo size](https://img.shields.io/github/repo-size/everton-dgn/saas_boilerplate_nextjs_tailwind?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/everton-dgn/saas_boilerplate_nextjs_tailwind?color=yellow&style=plastic)
 
 </div>
 
@@ -147,7 +147,7 @@ os workflows do GitHub Actions no mesmo commit.
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/everton-dgn/sass_boilerplate_nextjs_tailwind.git
+git clone https://github.com/everton-dgn/saas_boilerplate_nextjs_tailwind.git
 
 # Habilitar Corepack (para pnpm)
 corepack enable
