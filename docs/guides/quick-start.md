@@ -6,12 +6,12 @@ Este guia cobre o mínimo para rodar o boilerplate e entender a configuração.
 
 - Node na linha declarada em `engines.node` (`package.json`), espelhada em
   `.nvmrc` e `.node-version`.
-- pnpm via Corepack, usando a versão fixada em `packageManager`.
+- pnpm, usando a versão fixada em `packageManager` (o próprio pnpm resolve
+  a versão ao rodar dentro do projeto).
 
 ## Configuração
 
 ```bash
-corepack enable
 pnpm install
 ```
 

@@ -129,8 +129,9 @@ As versões exatas de Node e pnpm vivem no repositório, não nesta página:
 - **Node**: a linha declarada em `engines.node` no `package.json`, espelhada
   em `.nvmrc` e `.node-version`. Use `fnm use` ou `nvm use` na raiz do projeto
   para adotá-la automaticamente.
-- **pnpm**: a versão fixada em `packageManager` no `package.json`. Rode
-  `corepack enable` e o Corepack resolve a versão correta sozinho.
+- **pnpm**: a versão fixada em `packageManager` no `package.json`. Instale
+  qualquer versão recente (`brew install pnpm`) e o próprio pnpm troca para
+  a versão fixada ao rodar dentro do projeto.
 - **Kingfisher**: binário independente usado na varredura de segredos, sem
   vínculo com o `package.json`. Instale com `brew install kingfisher`. O hook
   de `pre-commit` avisa e segue adiante quando ele não está presente; o gate
@@ -149,8 +150,8 @@ os workflows do GitHub Actions no mesmo commit.
 # Clonar o repositório
 git clone https://github.com/everton-dgn/saas_boilerplate_nextjs_tailwind.git
 
-# Habilitar Corepack (para pnpm)
-corepack enable
+# Instalar o pnpm (se ainda não tiver)
+brew install pnpm
 
 # Instalar dependências
 pnpm i

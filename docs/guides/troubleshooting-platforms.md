@@ -18,6 +18,6 @@ gerais, leia `../reference/quality-constraints.md`.
 
 ## macOS
 
-- Use a linha de Node declarada em `engines.node` e habilite o Corepack para
-  o pnpm.
+- Use a linha de Node declarada em `engines.node` e instale o pnpm
+  (`brew install pnpm`); a versão do projeto vem de `packageManager`.
 - O Playwright reutiliza o Chromium do cache global padrão do macOS.
