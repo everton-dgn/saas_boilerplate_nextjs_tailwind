@@ -3,13 +3,9 @@
 ## pnpm install falha com erro de versão
 
 O repositório exige a linha de Node declarada em `engines.node` e a versão de
-pnpm fixada em `packageManager`, ambas no `package.json`. Alinhe o Node e
-execute:
-
-```bash
-corepack enable
-corepack prepare pnpm@latest --activate
-```
+pnpm fixada em `packageManager`, ambas no `package.json`. Alinhe o Node; a
+versão de pnpm é resolvida automaticamente pelo próprio pnpm ao rodar
+`pnpm install`.
 
 ## Meu commit foi rejeitado pelo Commitlint
 

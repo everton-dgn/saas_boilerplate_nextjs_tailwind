@@ -27,7 +27,7 @@
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:codegen": "playwright codegen http://localhost:3000",
     "check:update": "pnpm update --interactive --latest",
-    "update:pnpm": "corepack use pnpm@latest",
+    "update:pnpm": "pnpm self-update",
     "detect:duplicates": "pnpx jscpd ./src/**/*.ts",
     "postinstall": "if [ -d .git ]; then pnpx lefthook install && next typegen; fi"
   },
