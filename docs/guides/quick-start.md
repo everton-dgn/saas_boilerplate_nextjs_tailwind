@@ -11,6 +11,9 @@ Este guia cobre o mínimo para rodar o boilerplate e entender a configuração.
 
 ## Configuração
 
+Instale o pnpm, se ainda não tiver: `brew install pnpm` (macOS) ou o script
+oficial em <https://pnpm.io/installation>. Depois:
+
 ```bash
 pnpm install
 ```
